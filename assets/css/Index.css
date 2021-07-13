@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
 
 
-/* font-family: 'Zen Tokyo Zoo', cursive; 
+/* font-family: 'Zen Tokyo Zoo', cursive;
 font-family: 'IBM Plex Sans', sans-serif; */
 
 *{
     margin: 0;
     padding: 0;
-}   
+}
 
 body{
     background: rgb(176,208,179);
@@ -21,13 +21,13 @@ a{
 /* nav ul{
     font-family: 'Zen Tokyo Zoo', cursive;
     font-size: 65px;
-    text-align: center; 
-    padding: 10px 0px;  
+    text-align: center;
+    padding: 10px 0px;
 }  */
 span:nth-child(1){
     font-family: 'Zen Tokyo Zoo', cursive;
     font-size: 65px;
-    text-align: center;  
+    text-align: center;
     font-weight: 500;
     /* opacity: 1; */
 }
@@ -39,13 +39,20 @@ span:nth-child(2){
 /* } Kann man einer Span eine class geben? */
 }
 
+span:nth-child(3){
+    font-family: 'Zen Tokyo Zoo', cursive;
+    font-size: 65px;
+    text-align: center;
+    font-weight: 500;
+    /* opacity: 1; */
+}
 
 nav ul li{
     display: inline-block;
-    padding-top: 50px;
-    padding-right: 150px;
-    padding-bottom: 10px;
-    padding-left: 150px;;
+    padding-top: 45px;
+    /* padding-right: 100px;  */
+    /* padding-bottom: 5px; */
+    padding-left: 170px;;
     /* padding-right: 150px;
     padding-left: 150px; */
     transition: 0.5s;
@@ -53,7 +60,7 @@ nav ul li{
 
 nav ul li a{
     color: #193366;
-} 
+}
 
 nav ul li a:hover{
     padding-top: 4px;
@@ -80,21 +87,49 @@ div img{
 .fa-terminal{
     /* color: #193366; */
     opacity: 0.90;
-    text-shadow: 0px 0px 35px white; 
-    font-size: 45px; 
+    text-shadow: 0px 0px 35px white;
+    font-size: 45px;
     padding-right: 2px;
-    color: #5DC942;
-} 
+    color: #44a32d;
+}
 
 .fa-github{
     opacity: 0.90;
-    text-shadow: 0px 0px 35px white; 
-    font-size: 55px; 
+    text-shadow: 0px 0px 35px white;
+    font-size: 55px;
     padding-right: 5px;
     color: white;
-
 }
 
+.fa-html5{
+    opacity: 0.90;
+    text-shadow: 0px 0px 35px white;
+    font-size: 55px;
+    padding-right: 10px;
+    color: #EF6537;
+    padding-left: 50px;
+}
 
+.fa-css3-alt{
+    opacity: 0.90;
+    text-shadow: 0px 0px 35px white;
+    font-size: 55px;
+    padding-right: 10px;
+    color: #42AADE;  
+}
 
+.fa-node-js{
+    opacity: 0.92;
+    text-shadow: 0px 0px 35px white;
+    font-size: 55px;
+    padding-right: 10px;
+    color: #FCDA4B;  
+} 
 
+/* .fa-js-square{
+    opacity: 0.92;
+    text-shadow: 0px 0px 35px white;
+    font-size: 55px;
+    padding-right: 10px;
+    color: #FCDA4B;  
+} */
