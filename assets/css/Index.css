@@ -27,8 +27,7 @@ a{
 span:nth-child(1){
     font-family: 'Zen Tokyo Zoo', cursive;
     font-size: 65px;
-    text-align: center; 
-    padding: 10px 0px; 
+    text-align: center;  
     font-weight: 500;
     /* opacity: 1; */
 }
@@ -57,9 +56,10 @@ nav ul li a{
 } 
 
 nav ul li a:hover{
+    padding-top: 4px;
     color: white;
     text-shadow: 4px 1px 3px lightgray;
-    transition: 1s;
+    transition: 0.8s;
     border-bottom: 5px double rgba(255, 255, 255, 0.65);
 }
 
@@ -81,8 +81,19 @@ div img{
     /* color: #193366; */
     opacity: 0.90;
     text-shadow: 0px 0px 35px white; 
-    font-size: 32px; 
+    font-size: 45px; 
+    padding-right: 2px;
+    color: #5DC942;
 } 
+
+.fa-github{
+    opacity: 0.90;
+    text-shadow: 0px 0px 35px white; 
+    font-size: 55px; 
+    padding-right: 5px;
+    color: white;
+
+}
 
 
 
