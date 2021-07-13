@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&display=swap');
+
+
+/******************************************************************************
+    Initial styles
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    background: url('../img/Matrix.jpg') center/cover no-repeat fixed;
+    color: white;
+    font-size: 100%;
+    min-height: 100vh; /*kann man rauslöschen wenn mehr content ist!NUR TEST!*/
+}
+a {
+    text-decoration: none;
+}
+
+/******************************************************************************
+    Navigation area
+*/
+
+nav {
+    border: 2px solid #73AD21;
+    margin: 1%;
+}
+
+nav a {
+    color: white;
+    font-size: 1.2em;
+    padding: 2%;
+}
+nav ul {
+    list-style-type: none;
+}
+
+nav li{
+    display: inline-block;
+    vertical-align: top;
+}
+
+nav ul li ul li {   
+    padding-right: 5%;
+    font-size: 0.7em;
+    text-align: center;
+    text-shadow: 0px 0px 40px white;
+}
+
+header > nav > ul > li {
+    text-shadow: 0px 0px 40px gold; /*x-offset horizontal /links und rechts ------ y-offset vertikal/ nach oben und unten ------ wie es sich ausbreitet BLUR*/
+    width: 20%;
+    padding: 1% 2%;
+    font-size: 1.5em;  
+}
+
+nav ul > li a:hover {
+    text-decoration: underline;
+} 
+
+/******************************************************************************
+    Navigation area
+*/
+.cmd-area {
+    left: 20%;
+    /* border: 1px solid #fff; */
+}
+
+.cmd {
+    margin: 2%;
+    background: black;
+    padding: 1vmin 2vmin;
+    display: block;
+    border: 2px solid #73AD21;
+    
+}
+
+.cmd h2 {
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+.cmd p {
+    padding-bottom: 10px;
+}
+
+.cmd a {
+    padding-bottom: 10px;
+    font-size: 2em;
+    color: white;
+}
+

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+
+/* font-family: 'Zen Tokyo Zoo', cursive; 
+font-family: 'IBM Plex Sans', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+}   
+
+body{
+    background: rgb(176,208,179);
+    background: radial-gradient(circle, rgba(176,208,179,1) 21%, rgba(72,120,135,1) 100%);
+}
+
+a{
+    text-decoration: none;
+}
+
+/* nav ul{
+    font-family: 'Zen Tokyo Zoo', cursive;
+    font-size: 65px;
+    text-align: center; 
+    padding: 10px 0px;  
+}  */
+span:nth-child(1){
+    font-family: 'Zen Tokyo Zoo', cursive;
+    font-size: 65px;
+    text-align: center; 
+    padding: 10px 0px; 
+    font-weight: 500;
+    /* opacity: 1; */
+}
+
+span:nth-child(2){
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+/* } Kann man einer Span eine class geben? */
+}
+
+
+nav ul li{
+    display: inline-block;
+    padding-top: 50px;
+    padding-right: 150px;
+    padding-bottom: 10px;
+    padding-left: 150px;;
+    /* padding-right: 150px;
+    padding-left: 150px; */
+    transition: 0.5s;
+}
+
+nav ul li a{
+    color: #193366;
+} 
+
+nav ul li a:hover{
+    color: white;
+    text-shadow: 4px 1px 3px lightgray;
+    transition: 1s;
+    border-bottom: 5px double rgba(255, 255, 255, 0.65);
+}
+
+
+div{
+    border-radius: 20px;
+    box-shadow: 0px 0px 40px #fff;
+    text-align: center;
+    background-color: white;
+    margin: 2% 20% 0%; /*top2% - rl20% und 0% für bottom damit der Scrollbalken weg geht*/
+}
+
+div img{
+    width: 65%;
+    /* box-shadow: 11px 4px 14px 7px rgba(184,169,169,0.75); */
+}
+
+.fa-terminal{
+    /* color: #193366; */
+    opacity: 0.90;
+    text-shadow: 0px 0px 35px white; 
+    font-size: 32px; 
+} 
+
+
+
+

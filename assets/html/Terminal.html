@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Terminal.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header id="navigation">
+        <nav>
+            <ul>
+                <li>
+                    <a href="../../index.html">Home</a>
+                </li>
+
+                <li>
+                    Browsing
+
+                    <ul>
+                        <li><a href="#pwd">pwd</a></li>
+                        <li><a href="#ls">ls</a></li>
+                        <li><a href="#cd">cd</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    Files & folders
+
+                    <ul>
+                        <li><a href="#touch">touch</a></li>
+                        <li><a href="#cp">cp</a></li>
+                        <li><a href="#mv">mv</a></li>
+                        <li><a href="#rm">rm</a></li>
+                        <li><a href="#mkdir">mkdir</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    File content
+
+                    <ul>
+                        <li><a href="#cat">cat</a></li>
+                        <li><a href="#less">less</a></li>
+                        <li><a href="#head">head</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- BROWSING -->
+
+        <section class="cmd-area">
+
+            <article id="pwd" class="cmd">
+                <h2>pwd</h2>
+                <p class="purpose">Zeigt den Namen des aktuellen Arbeitsverzeichnisses an.</p>
+                <p class="options">
+                </p>
+                <!-- <a href="#navigation">▲</a> -->
+            </article>
+
+            <article id="ls" class="cmd">
+                <h2>ls</h2>
+                <p class="purpose">
+                    Listet Informationen über die DATEIEN auf (standardmäßig das aktuelle Verzeichnis).
+                </p>
+                <p class="options">
+                    Optionen (kleine Auswahl, nur die meistgenutzten):<br>
+                    ls -a: Zeigt alle Einträge auch die versteckten <br>
+                    ls -l: verwendet ein langes Listing-Format (untereinander) bsp.: Dateiname, Datum, Größe,
+                    Berechtigungen <br>
+                    ls --help: Dies zeigt die komplette Hilfe für das ls-Kommando an
+                </p>
+                <!-- <a href="#navigation">▲</a> -->
+            </article>
+
+            <article id="cd" class="cmd">
+                <h2>cd</h2>
+                <p class="purpose">
+                    cd: Man wechselt das aktuelle Arbeitsverzeichnis in der Shell <br>
+
+                    cd (directory folder)assets: Ändert das aktuelle Verzeichnis in den Ordner Assets. <br>
+                    directory folder auch DIR ist der Parameter zum Befehl cd.
+                </p>
+                <!-- <a href="#navigation">▲</a> -->
+            </article>
+
+            <!-- FILES & FOLDERS -->
+
+            <article id="touch" class="cmd">
+                <h2>touch</h2>
+                <p class="purpose">
+                    Mit dem touch Befehl wird eine leere Datei erstellt in dem aktuellem Arbeitsverzeichnis (Ordner), es
+                    sei denn, es wird -c eingegeben. <br>
+                    Bsp.: touch index.html
+                </p>
+                <p class="options">
+                    Options:<br>
+                    -c: erstellt keine neue Datei <br>
+                    -a: ändert nur die Zugriffszeit <br>
+                    -m: nur die Änderungszeit ändern <br>
+                    <a href="#navigation">▲</a>
+            </article>
+
+            <article id="cp" class="cmd">
+                <h2>cp</h2>
+                <p class="purpose">
+                    Kopiert die QUELLE/Datei in das ZIEL oder mehrere QUELLE(N) in das VERZEICHNIS.
+                </p>
+                <p class="options">
+                    Options:<br>
+                    -i: Fragt nach ob die Zieldatei ersetz werden darf wenn bereits eine Datei vorhanden ist mit dem
+                    gleichen Namen <br>
+                    -n: Eine vorhandene Datei wird nicht überschreiben <br>
+                    -r: Alle Unterverzeichnisse und Dateien werden kopiert <br>
+                    -u: kopiert nur, wenn die QUELLE-Datei neuer ist als die Zieldatei oder wenn die Zieldatei fehlt
+                </p>
+                <a href="#navigation">▲</a>
+            </article>
+
+            <article id="mv" class="cmd">
+                <h2>mv</h2>
+                <p class="purpose">
+                    Verschiebt den Ordner oder die Datei in das neue Ziel oder Datei/Ordner wird umbenannt.
+                    
+
+                </p>
+                <p class="options">
+                    Options:<br>
+                    f: Keine Abfrage vor dem Überschreiben. <br> verschiebt Datei (filename) in den Ordner (targetfolder) - Bsp.: mv -f (ALter Name) (Neuer Name) <br>
+                    -i: Fragt ob überschrieben werden darf<br>
+                    <!--  -n, keine vorhandene Datei überschreiben<br>
+                    -t, target-directory=DIRECTORY kopiert alle SOURCE-Argumente in DIRECTORY 
+                    -T, --no-target-directory behandelt DEST wie eine normale Datei<br> -->
+                    -u: kopiert nur, wenn die QUELLEN-Datei neuer ist als die ZIEL-Datei oder wenn die
+                    Zieldatei fehlt<br>
+                    <!-- -v, --verbose erklärt, was gemacht wird<br> -->
+
+                </p>
+                <a href="#navigation">▲</a>
+            </article>
+
+
+            <article id="rm" class="cmd">
+                <h2>rm</h2>
+                <p class="purpose">
+                Entfernt/Löscht (entkoppelt)  die DATEI(en).
+                </p>
+                <!-- <p class="options">
+                    Options:<br>
+                    -f, --force ignore nonexistent files and arguments, never prompt<br>
+                    -i prompt before every removal<br>
+                    -I prompt once before removing more than three files, or
+                    when removing recursively; less intrusive than -i,
+                    while still giving protection against most mistakes<br>
+                    -r, -R, --recursive remove directories and their contents recursively<br>
+                    -d, --dir remove empty directories<br>
+                    -v, --verbose explain what is being done<br>
+                </p>
+                <p class="remarks">
+                    By default, rm does not remove directories. Use the --recursive (-r or -R) option to remove each
+                    listed directory, too, along with all of its contents.<br>
+                    To remove a file whose name starts with a '-', for example '-foo', use one of these commands:<br>
+                    rm -- -foo<br>
+                    rm ./-foo<br>
+                </p> -->
+                <a href="#navigation">▲</a>
+            </article>
+
+
+            <article id="mkdir" class="cmd">
+                <h2>mkdir</h2>
+                <p class="purpose">
+                    Ordner erstellen
+                </p>
+                <!-- <p class="options">
+                    Options:<br>
+                    -m, --mode=MODE set file mode (as in chmod), not a=rwx - umask<br>
+                    -p, --parents no error if existing, make parent directories as needed<br>
+                    -v, --verbose print a message for each created directory<br>
+                    -Z set SELinux security context of each created directory to the default type<br>
+                </p> -->
+                <a href="#navigation">▲</a>
+            </article>
+
+
+            <article id="cat" class="cmd">
+                <h2>cat</h2>
+                <p class="purpose">
+                    cat: zeigt die ganze Datei an
+                </p>
+
+                <p class="options"></p>
+               
+                
+                </p>
+
+
+                <!-- <p class="options">
+                    Options:<br>
+                    -E, --show-ends display $ at end of each line<br>
+                    -n, --number number all output lines<br>
+                    -s, --squeeze-blank suppress repeated empty output lines<br>
+                    -T, --show-tabs display TAB characters as ^I<br>
+                </p>
+                <p class="remarks">
+                    Examples:<br>
+                    cat f - g Output f's contents, then standard input, then g's contents.<br>
+                    cat Copy standard input to standard output.<br>
+                </p>
+                <p class="exit">
+                    Exit Status:<br>
+                </p> -->
+                <a href="#navigation">▲</a>
+            </article>
+
+
+            <article id="head" class="cmd">
+                <h2>head</h2>
+                <p class="purpose">
+                    Zeigt nur die ersten 10 Zeilen der Datei an.<br>
+                    <!--  With more than one FILE, precede each with a header giving the file name.<br>
+                    With no FILE, or when FILE is -, read standard input.<br> 
+                </p>
+                <p class="options">
+                    Options:<br>
+                    -c, --bytes=[-]NUM print the first NUM bytes of each file;
+                    with the leading '-', print all but the last
+                    NUM bytes of each file<br>
+                    -n, --lines=[-]NUM print the first NUM lines instead of the first 10;
+                    with the leading '-', print all but the last
+                    NUM lines of each file<br>
+                    /p> -->
+                    <a href="#navigation">▲</a>
+            </article>
+
+
+            <article id="less" class="cmd">
+                <h2>less</h2>
+                <p class="purpose">
+                    Öffnet ein Pseudo-Fenster und zeigt eine Datei an, man kann sie nach oben und unten blättern bzw. Der Befehl less wird meist zum Öffnen und Anzeigen großer Dateien verwendet.
+                </p>
+                <a href="#navigation">▲</a>
+            </article>
+
+
+            <!-- 
+            <article id="" class="cmd">
+                <h2>ls</h2>
+                <p class="usage">
+
+                </p>
+                <p class="purpose">
+
+                </p>
+                <p class="options">
+                    Options:<br>
+                </p>
+                <p class="remarks">
+
+                </p>
+                <p class="exit">
+                    Exit Status:<br>
+                </p>
+                <a href="#top">▲</a>
+            </article>
+        -->
+
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+
+</body>
+
+</html>
