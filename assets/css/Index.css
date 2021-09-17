@@ -55,9 +55,9 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    padding-top: 4px;
+    padding-top: 40px;
     color: white;
-    text-shadow: 4px 1px 3px lightgray;
+    text-shadow: 4px 1px 3px pink;
     transition: 0.8s;
     border-bottom: 5px double rgba(255, 255, 255, 0.65);
 }
@@ -65,14 +65,14 @@ nav ul li a:hover{
 
 div{
     border-radius: 20px;
-    box-shadow: 0px 0px 40px #fff;
+    box-shadow: 0px 0px 30px #fff;
     text-align: center;
     background-color: white;
-    margin: 2% 20% 0%; /*top2% - rl20% und 0% für bottom damit der Scrollbalken weg geht*/
+    margin: 2% 18%; /*top2% - rl20% und 0% für bottom damit der Scrollbalken weg geht*/
 }
 
 div img{
-    width: 65%;
+    width: 70%;
     /* box-shadow: 11px 4px 14px 7px rgba(184,169,169,0.75); */
 }
 

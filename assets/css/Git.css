@@ -1,4 +1,22 @@
-*{
+* {
     margin: 0;
     padding: 0;
-}   
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.ssGithub {
+    width: 50%;
+    margin: 30px 0 5px 50px;
+}
+
+section {
+    margin: 50px 0 5px 50px;
+}
+
+.finger {
+    font-size: 160%;
+}

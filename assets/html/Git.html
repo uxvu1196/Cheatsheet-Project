@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,109 @@
     <link rel="stylesheet" href="../css/Git.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <h1>Der Super-DAU! ([D]ümmster [A]nzunehmender [U]ser)</h1>
+
+    <img src="../img/Screenshot-github.JPG" alt="" class="ssGithub">
+    <section>
+        <h2>git init //enter</h2>
+        <p>Initialsiert ein repository</p>
+        <p>Erklärung Verb: initalisiert = eröffnet</p>
+        <p>Eklärung Nomen: Initalisierung = Einrichtung</p>
+    </section>
+
+    <section>
+        <h2>git add//Leerzeichen//"." //enter</h2>
+        <p>Tut mein Repository Zwischenspeichern - Staging Area - VORBEREITEN sozusagen</p>
+    </section>
+
+    <section>
+        <h2>git commit -m "//Mein Kommentar"// </h2>
+        <p>Da notiert man als Kommentar die Änderungen rein, damit andere Dev nachvolllziehen können, was du zuletzt
+            geändert und gepusht hast</p>
+        <p>!!! Unbedingt mein Kommentar zwischen zwei Gänsefüßchen</p>
+    </section>
+
+    <section>
+        <h2>git branch -m Main //enter</h2>
+        <p>branch = Zweigstelle</p>
+        <p>-M main = Damit wird mein Ordner zum Hauptzweig gesetzt</p>
+        <p>Hauptzweig ist Remote https://uxvu1196.github.io/Cheatsheet-Project/</p>
+    </section>
+
+    <section>
+        <h2>git remoteadd origin https://uxvu1196.github.io/Cheatsheet-Project/</h2>
+    </section>
+
+    <section>
+        <h2>git push -u origin main //enter</h2>
+        <p>Ich verbinde mein Projekt (bspw. Cheatsheet) mit dem Hauptzweig -> MAIN</p>
+    </section>
+
+
+    <section>
+        <h1>AKTUALISIERUNG VON MEINEM PROJEKT AUF GITHUB:</h1>
+        <p>Wie speichere ich mein projekt ab nach dem ich es in meinen Repository hochgeladen habe?</p>
+        <br>
+        <h2></h2>
+        <p>git add (Parameter).</p>
+        <p>Es lädt dann nur die Änderungen hoch, nachdem es alle Ordnern durchgegangen ist</p>
+        <p>WARNING! = ist auch manchmal gefährlich, weil es auch die Änderung in einem Ordner hochladen kann, wo diese
+            Änderungen nicht unbedingt hochgeladen werden sollte, da es nur eine Übung bsp. ist</p>
+        <br>
+        <h2>git commit -m "*mein Kommentar*"</h2>
+        <br>
+        <h2>git push //enter</h2>
+        <p>veröffentlich auf GithubREMOTE: <br> git remote add origin
+            https://github.com/uxvu1196/Cheatsheet-Project.git = der verbindet das Lokale Projekt mit dem
+            Githubprojekt/repository</p>
+
+
+    </section>
+
+    <section>
+        <h2>Pages</h2>
+        <p>Unter "Settings" oben rechts klicken <span class="finger">&#9758;</span> "Pages" links im Nav selektieren
+            <span class="finger">&#9758;</span> Statt "None" bitte "main" selektieren und dann es speichern "save"
+        </p>
+        <p>Erstellt mir meine Internetseite für das Projekt</p>
+    </section>
+
+    <section>
+        <h2>git log</h2>
+        <p>Ist wie eine Liste von allen Tätigkeiten/Aktualisierung</p>
+    </section>
+
+    <section>
+        <h2>$ git log --oneline(Befehl)</h2>
+    </section>
+
+    <section>
+        <h2>Zusatzinformationen zu Github</h2>
+        <p>master = main !Sagt man heutzutage nicht mehr, veraltet.</p>
+        <p>LOKAL auf dem PC = örtlich beschränkt</p>
+        <p>working directory = cheatsheet Ordner</p>
+
+        <div>
+            <p>
+                a9eefe8 (HEAD -> main, origin/main) first commit = Ist die verkürzte Form von allem was ich davor
+                geschrieben habe und
+                er zeigt auch zbsp. HEAD -> main, origin/main
+            </p>
+            <p>
+                Head -> main LOCAL
+            </p>
+            <p>
+                Origin/main REMOTE
+            </p>
+            <p>
+                cursor zeigt auf 0a 9e ef e8 (Datensatz) Immer 2 bilden einen Byte
+            </p>
+        </div>
+
+    </section>
+
 </body>
+
 </html>
