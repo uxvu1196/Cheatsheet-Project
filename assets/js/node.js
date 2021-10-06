@@ -1,0 +1,1 @@
+// npm init-y erstellt dir gleich eine neues Package.json
